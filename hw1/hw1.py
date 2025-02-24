@@ -22,4 +22,4 @@ def height(x):
     return -(x[0]**2 + x[1]**2 + x[2]**2 - 2*x[0] - 4*x[1] - 6*x[2] + 8)
 
 x=hillClimbing([0,0,0],height,neighbor)
-print("x={:.3f} y={:.3f} z={:.3f} f(x,y,z)={:.3f}".format(x[0],x[1],x[2],height(x)))
+print("x={:.3f} y={:.3f} z={:.3f} f(x,y,z)={:.3f}".format(x[0],x[1],x[2],-height(x)))
